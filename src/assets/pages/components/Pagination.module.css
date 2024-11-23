@@ -1,0 +1,31 @@
+
+/* Container da paginação */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    gap: 0.5rem;
+}
+
+/* Botões de página */
+.pagination button {
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Página ativa */
+.pagination button.active {
+    background: #28a745;
+    color: #fff;
+    border-color: #28a745;
+}
+
+/* Efeito hover */
+.pagination button:hover:not(.active) {
+    background: #ddd;
+}
