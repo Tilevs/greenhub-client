@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import ProductCard from "./components/ProductCard";
-import Pagination from "./components/Pagination";
-import styles from './ProductList.module.css';
+import { useState } from "react";
+import ProductCard from "../components/ProductCard";
+import Pagination from "../components/Pagination";
 
 function ProductList() {
     const products = Array.from({ length: 30 }, (_, index) => ({
@@ -22,7 +21,7 @@ function ProductList() {
     const totalPages = Math.ceil(products.length / productsPerPage);
 
     return (
-        <div className={styles.container}>
+        <div className="flex flex-col items-center p-4">
             {/* Listagem de Produtos */}
             {currentProducts.map(product => (
                 <ProductCard key={product.id} product={product} />
