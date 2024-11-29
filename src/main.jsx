@@ -1,12 +1,6 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import ProductList from './assets/pages/ProductList'
+import App from './App';
 
 createRoot(document.getElementById('root')).render(
-
-
-  <ProductList/>
-
-
+  <App />
 )

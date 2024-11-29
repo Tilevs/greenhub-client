@@ -1,6 +1,3 @@
-import React from "react";
-import styles from './Pagination.module.css';
-
 const Pagination = ({ currentPage, totalPages, onPageChange }) => {
     const getVisiblePages = () => {
         if (totalPages <= 3) {
@@ -19,12 +16,12 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
     const visiblePages = getVisiblePages();
 
     return (
-        <div className={styles.pagination}>
+        <div className="flex items-center my-4 gap-2">
             {visiblePages.map(page => (
                 <button
                     key={page}
+                    className={`py-2 px-3 text-base bg-[#f4f4f4] border border-[#ccc] rounded-md cursor-pointer transition-all ${currentPage === page ? 'bg-[#28a745] text-[#fff] border-[#28a745]' : ''}`}
                     onClick={() => onPageChange(page)}
-                    className={currentPage === page ? styles.active : ""}
                 >
                     {page}
                 </button>
