@@ -1,0 +1,48 @@
+/* ProductDetail.module.css */
+.edit-icon, .delete-icon {
+    position: absolute;
+    top: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0.5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.edit-icon {
+    left: 30px;
+    height: 20px;
+}
+
+.delete-icon {
+    left: 1px;
+    height: 20px;
+}
+
+.toggle-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.arrow-down, .arrow-up {
+    margin-left: 8px;
+    width: 10px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+.arrow-down {
+    transform: rotate(45deg);
+}
+
+.arrow-up {
+    transform: rotate(-135deg);
+}

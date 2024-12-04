@@ -1,0 +1,62 @@
+.container {
+    padding: 20px;
+  
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h4{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.buttonContainer {
+    display: grid;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: flex; /* Flexbox para alinhamento */
+    align-items: center; /* Alinha texto e imagem verticalmente */
+    justify-content: space-between; /* Mantém texto e imagem nas extremidades */
+    background-color: #ffffff; /* Cor de fundo do botão */
+    padding: 10px 20px;
+    color: rgb(0, 0, 0); /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 10px; /* Cantos arredondados */
+    cursor: pointer; /* Indicador de clique */
+}
+
+.button span{
+    text-align: left;
+    flex: 1;
+    font-size: 2.5rem;
+}
+
+
+button:hover{
+    background-color: #0056b3;
+
+}
+
+button:disabled{
+    
+        background-color: #CCC; /* Cor do botão desabilitado */
+        color: #666; /* Cor do texto desabilitado */
+        cursor: not-allowed;
+        display: flex; /* Mantém o layout flex */
+        align-items: center; /* Alinha verticalmente */
+        justify-content: space-between; /* Espaça o texto e a imagem */
+        width: 95; /* Garante que a largura seja igual */
+        padding: 10px 20px; /* Mesma proporção dos botões habilitados */
+        border-radius: 10px; /* Mesma borda arredondada */
+}
+
+.button img{
+         height: 100px; /* Corrigido de 100x para 100px */
+         width: 100px; /* Defina a largura conforme necessário */
+}

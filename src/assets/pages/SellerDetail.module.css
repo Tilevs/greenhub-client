@@ -1,0 +1,28 @@
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sellerHeader {
+  display: flex; /* Layout horizontal */
+  align-items: center; /* Centraliza verticalmente os elementos */
+  gap: 20px; /* Espaço entre a imagem e o texto */
+  margin-bottom: 20px;
+}
+
+.sellerImage {
+  width: 150px; /* Ajuste o tamanho da imagem */
+  height: 150px;
+ 
+}
+
+.sellerHeader h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.sellerHeader h5 {
+  font-size: 1.2rem;
+  color: #000000;
+}
